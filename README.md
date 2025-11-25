@@ -49,12 +49,84 @@ Project structure:
 ---
 
 ---
-## Installation
+
+### Installation
 
 Clone the repository:
 
 ```bash
-$ git clone https://github.com/<your_repo>/advanced-subnet-calculator.git
-$ cd advanced-subnet-calculator
-$ pip install -r requirements.txt --user
+git clone https://github.com/<your_repo>/advanced-subnet-calculator.git
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt --user
+```
+
+Configure AWS CLI (required if using EC2 IP fetch):
+
+```bash
+aws configure
+```
+
+**OR**
+
+1. Download the latest release from [Releases](https://github.com/Tes3awy/subnetting/releases/).
+2. Extract `subnetting.zip` file.
+3. `cd` into the `subnetting` directory.
+4. Run the following command in terminal:
+
+```bash
+pip install -r requirements.txt --user
+```
 ---
+
+---
+
+### How it Works
+
+# Run the main script in AWS Cloud9:
+
+```bash
+python3 main.py
+```
+
+You will be prompted to choose the input mode:
+
+Enter [1] to enter an IP address
+Enter [2] to use your EC2 server IP address
+
+Options:
+
+1. Enter an IP manually
+    - Type any IPv4 address in CIDR format (e.g., 192.168.1.0/24)
+    - The script will calculate subnets based on your input
+
+2. Use your EC2 server IP
+    - The script fetches running EC2 instance IPs using boto3
+    - Choose public or private IP for subnet calculation
+
+Next, select the subnetting mode:
+
+Do you want to enter number of (n) networks or (h) hosts? `[n/h]`:
+
+    - `n` → Enter the number of networks you need
+    - `h` → Enter the number of hosts per subnet
+
+The script calculates for each subnet:
+
+- Network ID
+- Broadcast ID
+- First host
+- Last host
+- Total usable hosts
+
+Results are displayed in a **formatted table** using `tabulate`.
+
+**Note:**
+
+- CIDR notation without a prefix is treated as `/32`
+- Gateway input accepts `0` or `1` only:  
+  - `0` picks the first IP of the subnet  
+  - `1` picks the last IP of the subnet
