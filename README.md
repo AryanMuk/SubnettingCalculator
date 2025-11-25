@@ -1,6 +1,16 @@
-[![Tested on Python 3.7+](https://img.shields.io/badge/Python%203.7+-blue.svg?logo=python&logoColor=white&style=flat-square)]()
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)]()
-[![License](https://img.shields.io/badge/license-MIT-purple?style=flat-square)]()
+[![Tested on Python 3.7+](https://img.shields.io/badge/Python%203.7+-blue.svg?logo=python&logoColor=white&style=flat-square)](https://www.python.org/downloads)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/psf/black)
+[![License](https://img.shields.io/badge/license-MIT-purple?style=flat-square)](https://github.com/<username>/<repo>/blob/main/LICENSE)
+[![Code Size](https://img.shields.io/github/languages/code-size/<username>/<repo>?color=green&style=flat-square)](https://github.com/<username>/<repo>)
+[![Contributors](https://img.shields.io/github/contributors/<username>/<repo>?style=flat-square)](https://github.com/<username>/<repo>/graphs/contributors)
+[![Release Date](https://img.shields.io/github/release-date/<username>/<repo>?style=flat-square)](https://github.com/<username>/<repo>/releases)
+[![Top Language](https://img.shields.io/github/languages/top/<username>/<repo>?style=flat-square)](https://github.com/<username>/<repo>)
+[![Languages Count](https://img.shields.io/github/languages/count/<username>/<repo>?style=flat-square)](https://github.com/<username>/<repo>/languages)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat-square&labelColor=ef8336)](https://pycqa.github.io/isort/)
+[![Open Issues](https://img.shields.io/github/issues/<username>/<repo>?style=flat-square)](https://github.com/<username>/<repo>/issues)
+[![Environment](https://img.shields.io/badge/environment-AWS_Cloud9-blue?style=flat-square)]()
+[![Usage](https://img.shields.io/badge/usage-CLI-green?style=flat-square)]()
+
 
 # Advanced IPv4 Subnet Calculator (AWS Cloud9)
 
