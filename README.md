@@ -130,3 +130,26 @@ Results are displayed in a **formatted table** using `tabulate`.
 - Gateway input accepts `0` or `1` only:  
   - `0` picks the first IP of the subnet  
   - `1` picks the last IP of the subnet
+### Features
+- Automatic AWS EC2 IP detection
+- Supports both network-based and host-based subnetting
+- Nicely formatted output table
+- Works on Python 3.7+
+### Example Output
+ Enter [1] to enter an IP address
+ Enter [2] to use your EC2 server IP address: 1
+ Enter Required IP Address in CIDR format: 192.168.1.0/24
+ ===== Subnetting Calculator =====
+ Do you want to enter number of (n) networks or (h) hosts? [n/h]: n
+ Enter number of networks needed: 4
+ ===== Subnetting Result =====
++-----------+------------+------------+--------------+------------+-----------+-------------------+
+| Subnet #  | CIDR       | Network ID | Broadcast ID | First Host | Last Host | Total Usable Hosts |
++-----------+------------+------------+--------------+------------+-----------+-------------------+
+| 1         | 192.168.1.0/26 | 192.168.1.0 | 192.168.1.63 | 192.168.1.1 | 192.168.1.62 | 62                |
+| 2         | 192.168.1.64/26 | 192.168.1.64 | 192.168.1.127 | 192.168.1.65 | 192.168.1.126 | 62                |
+| 3         | 192.168.1.128/26 | 192.168.1.128 | 192.168.1.191 | 192.168.1.129 | 192.168.1.190 | 62                |
+| 4         | 192.168.1.192/26 | 192.168.1.192 | 192.168.1.255 | 192.168.1.193 | 192.168.1.254 | 62                |
++-----------+------------+------------+--------------+------------+-----------+-------------------+
+### License
+This project is licensed under the MIT License.
