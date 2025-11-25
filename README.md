@@ -45,18 +45,25 @@ Key functionalities:
 Project structure:
 
 ```bash
-│   main.py
-│   subnetting.py
-│   ec2_ip_fetcher.py
-│   ip_to_cidr.py
-│   requirements.txt
-│   README.md
-│   .gitignore
-│   LICENSE
 │
-└───assets
-        demo.png
-```
+├── subnettingcalculator/    
+│   ├── __init__.py           
+│   ├── main.py               
+│   ├── subnetting.py         
+│   ├── ec2_ip_fetcher.py    
+│   └── ip_to_cidr.py           
+│
+├── tests/                      
+│   ├── __init__.py
+│   └── test_subnetting.py
+│
+├── assets/
+│   └── demo.png
+│
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── LICENSE
 
 ---
 
