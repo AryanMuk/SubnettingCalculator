@@ -46,7 +46,7 @@ Project structure:
 │
 └───assets
         demo.png
----
+```
 
 ---
 
