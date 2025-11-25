@@ -1,2 +1,2 @@
 # SubnettingCalculator
-Integration of python and linux to do subnetting calculations
+Integration of python and AWS to do subnetting calculations
