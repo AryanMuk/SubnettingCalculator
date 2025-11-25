@@ -1,0 +1,33 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+ENV/
+env/
+
+# AWS Cloud9 workspace files
+.c9/
+
+# IDEs
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# Ignore all other files except the main project files
+# (explicitly include the essential project files)
+!main.py
+!subnetting.py
+!ec2_ip_fetcher.py
+!ip_to_cidr.py
+!requirements.txt
+!README.md
+!LICENSE
+!assets/
