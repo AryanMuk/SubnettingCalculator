@@ -1,0 +1,9 @@
+# Requirements for Advanced IPv4 Subnet Calculator (AWS Cloud9)
+
+# AWS SDK for Python - used to fetch EC2 instance IP addresses
+boto3>=1.26.0
+
+# Tabulate - used to display subnetting results in nicely formatted tables
+tabulate>=0.9.0
+
+# ipaddress is part of standard library (Python 3.7+), no need to install separately
