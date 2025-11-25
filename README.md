@@ -101,7 +101,7 @@ pip install -r requirements.txt --user
 
 ### How it Works
 
-# Run the main script in AWS Cloud9:
+**Run the main script in AWS Cloud9:**
 
 ```bash
 python3 main.py
